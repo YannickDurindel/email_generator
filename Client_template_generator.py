@@ -1046,14 +1046,14 @@ for i in range(20,30):       #de 0 à 20 done
     
 
 try:
-    with open('/home/yannick/Documents/useless/py_codes/Email_broadcast/customers_template.csv', 'w') as email_list:
+    with open('path/file', 'w') as email_list:
         for i in range(0,len(email)):
             email_list.write(email[i]+"\n")
 except FileNotFoundError:
     print("The 'docs' directory does not exist")
 
 
-op = open("/home/yannick/Documents/useless/py_codes/Email_broadcast/customers_template.csv", "w", newline='')
+op = open("path/file", "w", newline='')
 headers = ['First Name','Last Name','Email','Accepts Email Marketing','Company','Address1','Address2','City','Province','Province code','Country','Country code','Zip','Phone','Accepts SMS Marketing','Total Spent','Total Orders','Tags','Note','Tax Exempt']
 data = csv.DictWriter(op, delimiter=',', fieldnames=headers)
 data.writerow(dict((heads, heads) for heads in headers))
