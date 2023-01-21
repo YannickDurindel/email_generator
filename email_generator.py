@@ -3,7 +3,7 @@
 """
 Created on Mon Dec 12 12:19:43 2022
 
-@author: yannick
+@author: yannick durindel
 """
 import subprocess
 import time
