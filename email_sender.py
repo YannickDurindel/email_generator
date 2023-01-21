@@ -11,22 +11,15 @@ import yagmail
 import time
 import time
 
-with open('/home/yannick/Documents/useless/py_codes/Email_broadcast/email_list.txt') as f:
+with open('path/file') as f:
     email = [line for line in f.readlines()]
 
-user = 'yannick.durindel@gmail.com'
-app_password = 'vavwcwykkzbmpdvw' # a token for gmail
-subject = 'Can you teach your computer how to trade crypto 24/7 ?'
+user = 'your@email'
+app_password = 'token' # a token for gmail
+subject = 'email title'
 
 content = """
-Can You teach your computer how to trade cryptocurrencies 24/7 ?
-
-The answer is yes ! And guess what, you don't even need to know about trading, or coding !!!
-If you want more info check this website : http://cryptobot.trading , you'll get a free insight.
-
-Hoping you'll enjoy !
-Durindel Yannick
-Follow me on instagram at @student_entreprneur
+your email
 """
 
 for k in range(320,len(email)):
